@@ -1,0 +1,327 @@
+/*Styles communs pour tout le site*/
+
+body {
+
+    margin: 0.5px;
+    padding: 0.5px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url(../images/backgrd/blueSky.jpg);
+
+}
+
+/*Styles de l'entête du site*/
+
+header {
+
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 115px;
+    position: fixed;
+}
+
+header img {
+
+    margin: 0.5px;
+    padding: 0.5px;
+    width:150px;
+    height: 115px;
+    position: fixed;
+    display:flex;
+
+}
+
+header .entete {
+
+    margin-left: 150px;
+    padding: 0.5px;
+    height: 115px;
+    background-image: url(../images/backgrd/seaLandAir.jpg);
+    text-align: center;
+    line-height: 0.5;
+    display:block;
+
+}
+
+/*Styles du menu*/
+
+.menu {
+
+    margin-top: 115px;
+    padding-top: 25px;
+    width: 150px;
+    position: fixed;
+    overflow: auto;
+    background-image: url(../images/backgrd/blueSky.jpg);
+
+}
+
+.menu a {
+
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    color: darkblue;
+    text-decoration: none;
+    text-align: center;
+    font-size: x-large;
+
+}
+
+.menu a:hover {
+
+color: white;
+background-color:brown;
+
+}
+
+.menu .active {
+
+color: white;
+background-color:darkslategray;
+
+}
+
+.menu a:focus {
+
+    background-color: seagreen;
+
+}
+
+/*Styles du contenu*/
+
+.contenu {
+
+    margin-top: 115px;
+    margin-left: 151px;
+    padding: 25px;
+    max-width: 1500px;
+    border: 2px solid ghostwhite;
+    overflow: auto;
+    text-align: justify;
+    line-height: 2;
+
+}
+
+ol li a:hover {
+    color:forestgreen;
+    background-color: ghostwhite;
+}
+
+#contAccueil {
+
+    background-image: url(../images/backgrd/sunrise.jpg);
+    background-size: cover;
+
+}
+
+#contCarriere {
+
+    background-image: url(../images/backgrd/sunset.jpg);
+    background-size: cover;
+
+}
+
+#contContact {
+
+    background-image: url(../images/backgrd/sunshine.jpg);
+    background-size: cover;
+
+}
+
+#auteur {
+
+    text-align: center;
+
+}
+
+.contenu img {
+
+    max-width: 300px;
+    max-height:500px;
+    margin: 25px;
+}
+
+.imgLeft {
+
+    float: left;
+}
+
+.imgRight {
+
+    float: right;
+}
+
+.contenu ul li a, .contenu ol li a {
+    text-decoration: none;
+    color:darkred;
+    font-size: large;
+}
+
+.dirLTL {
+
+    padding: 10px;
+    float: left;
+
+}
+
+.imgDir {
+
+    width: 150px;
+    box-sizing: border-box;
+
+}
+
+.aprèsDiv {
+
+    display: inline-block;
+
+}
+
+#tablEmplois {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    width:auto;
+    text-justify: distribute;
+
+}
+
+#tablEmplois, td, th {
+
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+#tablEmplois tr:nth-child(odd){
+    background-color:snow;
+}
+
+#tablEmplois tr:nth-child(even){
+    background-color:wheat;
+}
+
+#tablEmplois tr:hover{
+    color: orangered;
+    background-color:yellow;
+}
+
+#tablEmplois th {
+    padding: 5px;
+    text-align:center;
+    background-color:yellowgreen;
+    color:purple;
+  }
+
+#tablEmplois #titre {
+
+    font-size:large;
+    color: blue;
+    background-color: rgb(200, 200, 200);
+
+}
+
+.contactUs {
+
+    display:flex;
+    justify-content:space-around;
+
+}
+
+.contactUs div {
+    
+    display: inline-block;
+}
+
+.imgContact {
+
+    width: 125px;
+    max-height: 200px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.visitez li a:hover {
+    color:darkturquoise;
+    background-color: dimgray;
+
+}
+
+/*Styles de la barre de bas de page*/
+
+footer {
+
+    margin:0px;
+    width: 100%;
+    border: 2px solid ghostwhite;
+    max-height: 5%;
+    text-align: center;
+    background-image: url(../images/backgrd/sunset1.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.crText {
+    color:cyan;
+    font-weight: bolder;
+}
+
+.cText {
+    color:darkgray;
+    font-weight: bold;
+}
+
+.basPage, .àPart {
+
+    display: flex;
+    justify-content:space-around;
+
+}
+
+
+ /* Sur les tablettes et les cellulaires [largeur de l'écran jusqu'à 760px], la barre des menus va au dessus du contenu affiché */
+@media screen and (max-width: 760px) {
+
+    /*Texte de l'entête*/
+
+    #petit3 {
+
+        line-height: 0.1;
+
+    }
+
+    #petit1 {
+
+        line-height: 1;
+
+    }
+
+    /*Barre du menu; devient horizontale entre l'entête et le contenu*/
+    .menu {
+
+        width: 100%;
+        height: auto;
+        position: relative fixed;
+
+    }
+    
+    .menu a {
+        
+        float: left;
+        font-size:large;
+    
+    }
+
+    /*Conteneur du contenu ouvert/visité*/
+
+    .contenu {
+        
+        margin-left: 0;
+        margin-top: 175px;
+        
+    
+    }
+}
